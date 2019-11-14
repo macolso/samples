@@ -30,7 +30,7 @@
             <a class="dropdown-item" href="#">Another notification</a>
           </drop-down> -->
 
-          
+          <!--
           <li class="nav-item">
             <a href="/#/profile" class="nav-link">
               <i class="ti-user"></i>
@@ -38,7 +38,7 @@
                 Profile
               </p>
             </a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div></nav>

@@ -5,7 +5,7 @@ import NotFound from "@/pages/NotFoundPage.vue"
 // Admin pages
 import Dashboard from "@/pages/Dashboard.vue"
 import UserProfile from "@/pages/UserProfile.vue"
-import Flights from "@/pages/Flights.vue"
+import Deployments from "@/pages/Deployments.vue"
 import Quakes from "@/pages/Earthquakes.vue"
 import Weather from "@/pages/Weather.vue"
 
@@ -26,9 +26,9 @@ const routes = [
         component: UserProfile
       },
       {
-        path: "flights",
-        name: "flights",
-        component: Flights
+        path: "Deployments",
+        name: "Deployments",
+        component: Deployments
       },
       {
         path: "quakes",
