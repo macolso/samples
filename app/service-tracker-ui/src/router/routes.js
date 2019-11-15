@@ -13,36 +13,16 @@ const routes = [
   {
     path: "/",
     component: DashboardLayout,
-    redirect: "/dashboard",
+    redirect: "/",
     children: [
       {
-        path: "dashboard",
-        name: "dashboard",
-        component: Dashboard
-      },
-      {
-        path: "profile",
-        name: "profile",
-        component: UserProfile
-      },
-      {
-        path: "Deployments",
+        path: "/",
         name: "Deployments",
         component: Deployments
-      },
-      {
-        path: "quakes",
-        name: "quakes",
-        component: Quakes
-      },
-      {
-        path: "weather",
-        name: "weather",
-        component: Weather
       }
     ]
   },
-  { path: "*", component: NotFound }
+  { path: "*", component: DashboardLayout }
 ];
 
 /**

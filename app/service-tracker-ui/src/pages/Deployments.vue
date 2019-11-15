@@ -2,18 +2,22 @@
   <section>
     <div class="row">
       <div class="col-md-6 col-xl-3">
-        <h6>Virtual Kubelet Regions</h6>
+        <h5>Virtual Kubelet Regions</h5>
       </div>
     </div>
-    <div class="btn-group">
-      <button> West US </button>
-      <button> East US </button>
-      <button> Australia </button>
-      <button> North Europe </button>
-      <button> Japan </button>
-    </div>
-    <div v-bind:style="{ height: mapHeight + 'px'}">
-      <div id='map'></div>
+    <div id="content-wrapper">
+      <div id="button-wrapper">
+        <button class="btn-group"> West US </button>
+        <button class="btn-group"> East US </button>
+        <button class="btn-group"> Australia </button>
+        <button class="btn-group"> North Europe </button>
+        <button class="btn-group"> Japan </button>
+      </div>
+      <div class="map-wrapper">
+        <div v-bind:style="{ height: mapHeight + 'px'}">
+          <div id='map'></div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -152,7 +156,20 @@
 </script>
 <style lang='scss'>
 
+  #map-wrapper {
+    background-color: blue;
+    width: 80%;
+  }
 
+
+
+  .btn-group {
+    color: teal;
+    border-color: none;
+    font-weight: 500;
+    display: block;
+    font-size: larger;
+  }
 
   #map {
     width: 100%;
