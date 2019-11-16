@@ -32,8 +32,9 @@ module.exports = {
     },
     proxy: {
       '/api/flights/current': {
-        target: process.env.FLIGHT_API_ROOT + 'latest',
+        target: "http://52.224.150.235/regions",
         changeOrigin: true,
+        logLevel: "info",
         pathRewrite: {
           '^/api/flights/current': ''
         }
